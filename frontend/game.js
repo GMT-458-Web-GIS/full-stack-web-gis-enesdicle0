@@ -1,3 +1,5 @@
+const API_BASE = "http://localhost:3000";
+
 // 1. TOKEN
 Cesium.Ion.defaultAccessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI0MDhlNDg5OS05MDkzLTQ2MmUtOTdhOS0wMWQ1NDRkZmVjZjgiLCJpZCI6MzYxNzU1LCJpYXQiOjE3NjM1NDIwOTN9.eBH9VcHpLS2eLavSYyexd-NdI2d_HIgtaJ7tZ5fJCOA";
 
@@ -6,7 +8,7 @@ const backgroundMusic = new Audio('sounds/music.mp3');
 backgroundMusic.loop = true; backgroundMusic.volume = 0.3;
 
 // 3. VERİ
-const rawGeoJSON = {
+ const rawGeoJSON = {
   "type": "FeatureCollection",
   "features": [
     { "properties": { "name": "Galatasaray", "logo": "galatasaray.png", "country_logo": "turkey.png" }, "geometry": { "coordinates": [28.9918, 41.1038] } },
@@ -110,6 +112,19 @@ async function initCesium() {
         sceneModePicker: false, selectionIndicator: false, timeline: false,
         navigationHelpButton: false, navigationInstructionsInitiallyVisible: false
     });
+Cesium.GeoJsonDataSource.load(`${API_BASE}/api/pois`, {
+  clampToGround: true
+})
+  .then((dataSource) => {
+    viewer.dataSources.add(dataSource);
+    viewer.zoomTo(dataSource);
+  })
+
+  .catch((error) => {
+    console.error("GeoJSON load error:", error);
+  });
+
+
     viewer._cesiumWidget._creditContainer.style.display = "none";
     try {
         const imagery = new Cesium.IonImageryProvider({ assetId: 2 });

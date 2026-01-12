@@ -1,0 +1,230 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [28.9918, 41.1038] },
+      "properties": {
+        "name": "Galatasaray",
+        "logo": "galatasaray.png",
+        "country_logo": "turkey.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [29.0364, 40.9875] },
+      "properties": {
+        "name": "Fenerbahçe",
+        "logo": "fenerbahce.png",
+        "country_logo": "turkey.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [28.9942, 41.0392] },
+      "properties": {
+        "name": "Beşiktaş",
+        "logo": "besiktas.png",
+        "country_logo": "turkey.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [39.6736, 41.0069] },
+      "properties": {
+        "name": "Trabzonspor",
+        "logo": "trabzonspor.png",
+        "country_logo": "turkey.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [28.8094, 41.0717] },
+      "properties": {
+        "name": "Başakşehir",
+        "logo": "basaksehir.png",
+        "country_logo": "turkey.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-3.6883, 40.4531] },
+      "properties": {
+        "name": "Real Madrid",
+        "logo": "real_madrid.png",
+        "country_logo": "spain.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [11.6248, 48.2188] },
+      "properties": {
+        "name": "Bayern Munich",
+        "logo": "bayern_munich.png",
+        "country_logo": "germany.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [7.4519, 51.4926] },
+      "properties": {
+        "name": "Borussia Dortmund",
+        "logo": "borussia_dortmund.png",
+        "country_logo": "germany.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-2.9608, 53.4308] },
+      "properties": {
+        "name": "Liverpool",
+        "logo": "liverpool.png",
+        "country_logo": "england.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [9.1238, 45.4781] },
+      "properties": {
+        "name": "AC Milan",
+        "logo": "ac_milan.png",
+        "country_logo": "italy.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [9.1238, 45.4781] },
+      "properties": {
+        "name": "Inter Milan",
+        "logo": "inter_milan.png",
+        "country_logo": "italy.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.2530, 48.8414] },
+      "properties": {
+        "name": "Paris Saint-Germain",
+        "logo": "paris_saint-germain.png",
+        "country_logo": "france.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-2.2004, 53.4831] },
+      "properties": {
+        "name": "Manchester City",
+        "logo": "manchester_city.png",
+        "country_logo": "england.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-0.1910, 51.4817] },
+      "properties": {
+        "name": "Chelsea",
+        "logo": "chelsea.png",
+        "country_logo": "england.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.1228, 41.3809] },
+      "properties": {
+        "name": "Barcelona",
+        "logo": "barcelona.png",
+        "country_logo": "spain.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [7.6413, 45.1097] },
+      "properties": {
+        "name": "Juventus",
+        "logo": "juventus.png",
+        "country_logo": "italy.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-3.5990, 40.4363] },
+      "properties": {
+        "name": "Atlético Madrid",
+        "logo": "atletico_madrid.png",
+        "country_logo": "spain.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-9.1849, 38.7526] },
+      "properties": {
+        "name": "Benfica",
+        "logo": "benfica.png",
+        "country_logo": "portugal.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [4.9416, 52.3144] },
+      "properties": {
+        "name": "Ajax",
+        "logo": "ajax.png",
+        "country_logo": "netherlands.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [7.0021, 51.0382] },
+      "properties": {
+        "name": "Bayer Leverkusen",
+        "logo": "bayer_leverkusen.png",
+        "country_logo": "germany.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-9.1608, 38.7611] },
+      "properties": {
+        "name": "Sporting CP",
+        "logo": "sporting_cp.png",
+        "country_logo": "portugal.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.5719, 55.7028] },
+      "properties": {
+        "name": "FC Copenhagen",
+        "logo": "fc_copenhagen.png",
+        "country_logo": "denmark.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [5.4678, 51.4417] },
+      "properties": {
+        "name": "PSV Eindhoven",
+        "logo": "psv_eindhoven.png",
+        "country_logo": "netherlands.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-4.2055, 55.8497] },
+      "properties": {
+        "name": "Celtic",
+        "logo": "celtic.png",
+        "country_logo": "scotland.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [5.3958, 43.2699] },
+      "properties": {
+        "name": "Marseille",
+        "logo": "marseille.png",
+        "country_logo": "france.png"
+      }
+    }
+  ]
+}

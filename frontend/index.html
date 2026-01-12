@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>UCL Official GeoGame</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700;900&display=swap" rel="stylesheet">
+
+    <script src="https://cesium.com/downloads/cesiumjs/releases/1.111/Build/Cesium/Cesium.js"></script>
+    <link href="https://cesium.com/downloads/cesiumjs/releases/1.111/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="feedback-flash"></div>
+
+    <div id="pre-intro-screen">
+        <div class="ucl-logo-text">UEFA CHAMPIONS LEAGUE</div>
+        <button id="start-experience-btn">ENTER THE ARENA</button>
+    </div>
+
+    <div id="video-intro-screen" style="display: none;">
+        <video id="intro-video" width="100%" height="100%" style="object-fit: cover;">
+            <source src="images/ucl_intro.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="header-bar" style="display: none;"> <img src="images/logo_ucl.png" class="ucl-header-logo" alt="UCL">
+        <h1>CHAMPIONS MAP</h1>
+    </div>
+
+    <div id="main-game-wrapper" style="display: none;"> <div id="left-panel" class="glass-panel">
+            <div class="panel-header">TARGET CLUB</div>
+            <div class="logo-box">
+                <img id="team-logo" src="" alt="Target">
+            </div>
+            <div id="team-name">Click KICK OFF</div>
+            <div id="result-text"></div>
+        </div>
+
+        <div id="center-panel">
+            <div id="cesiumContainer"></div> 
+        </div>
+
+        <div id="right-panel" class="glass-panel">
+            <div class="panel-header">MATCH STATS</div>
+            
+            <div class="stat-box">
+                <span class="label">SCORE</span>
+                <span id="score" class="value">0</span>
+            </div>
+            
+            <div class="stat-box">
+                <span class="label">TIME LEFT</span>
+                <span id="timer" class="value">20</span>
+            </div>
+
+            <div class="stat-box">
+                <span class="label">GLOBAL</span>
+                <span id="global-timer" class="value">120</span>
+            </div>
+
+            <div id="flag-container" style="display:none;">
+                <div class="panel-header" style="margin-top:20px;">COUNTRY HINT</div>
+                <img id="country-hint-logo" src="" alt="Flag">
+            </div>
+        </div>
+    </div>
+
+    <div id="main-menu" style="display: none;">
+        <div class="glass-panel menu-box">
+            <h1 class="menu-title">MAIN MENU</h1>
+            <div class="menu-buttons">
+                <button id="menu-start-btn" class="neon-btn">START MISSION</button>
+            </div>
+            <p class="menu-footer">GMT 458 Project</p>
+        </div>
+    </div>
+
+    <div id="bottom-controls-bar" class="glass-panel" style="display: none;"> <div class="hint-group">
+            <button id="radar-btn" class="action-btn">RADAR (<span id="radar-count">2</span>)</button>
+            <button id="flag-btn" class="action-btn">FLAG (<span id="flag-count">2</span>)</button>
+        </div>
+        
+        <div class="game-instruction">LOCATE THE STADIUM & CLICK</div>
+        <button id="start-button" class="neon-btn">KICK OFF</button>
+    </div>
+
+    <div id="game-over-screen" style="display: none;">
+        <div class="glass-panel menu-box">
+            <h2>FULL TIME</h2>
+            <p>FINAL SCORE: <span id="final-score">0</span></p>
+            <button id="restart-button" class="neon-btn">PLAY AGAIN</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

@@ -1,7 +1,23 @@
+const fs = require("fs");
+const path = require("path");
+const morgan = require("morgan");
+
 const express = require("express");
 const cors = require("cors");
 
 const app = express();
+
+const logsDir = path.join(__dirname, "logs");
+if (!fs.existsSync(logsDir)) fs.mkdirSync(logsDir);
+
+const accessLogStream = fs.createWriteStream(
+  path.join(logsDir, "access.log"),
+  { flags: "a" }
+);
+
+app.use(morgan("combined", { stream: accessLogStream }));
+app.use(morgan("dev")); // terminale de yazsın
+
 app.use(cors());
 app.use(express.json());
 

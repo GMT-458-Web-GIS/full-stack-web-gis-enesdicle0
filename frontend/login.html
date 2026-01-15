@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login</title>
+  <style>
+    body{font-family:Arial;margin:40px;max-width:520px}
+    input,select,button{width:100%;padding:10px;margin:8px 0}
+    .row{display:flex;gap:10px}
+    .row > *{flex:1}
+    .box{border:1px solid #ddd;padding:16px;border-radius:10px}
+    .muted{color:#666;font-size:13px}
+  </style>
+</head>
+<body>
+  <h2>GMT458 Login</h2>
+
+  <div class="box">
+    <h3>Register</h3>
+    <input id="r_user" placeholder="username" />
+    <input id="r_pass" placeholder="password" type="password" />
+    <div class="row">
+      <select id="r_role">
+        <option value="scout">scout</option>
+        <option value="commander">commander</option>
+        <option value="sultan">sultan</option>
+      </select>
+      <button id="btnRegister">Register</button>
+    </div>
+    <p class="muted" id="r_out"></p>
+  </div>
+
+  <br/>
+
+  <div class="box">
+    <h3>Login</h3>
+    <input id="l_user" placeholder="username" />
+    <input id="l_pass" placeholder="password" type="password" />
+    <button id="btnLogin">Login</button>
+    <p class="muted" id="l_out"></p>
+  </div>
+
+  <br/>
+  <button id="btnGoGame">Go to Game</button>
+
+  <script src="login.js"></script>
+</body>
+</html>
